@@ -10,14 +10,8 @@ This project uses Vite to create a React application with fast development and b
 
 ### Installation
 
-1. **Clone the repository:**
 
-   ```bash
-   git clone <repository-url>
-   cd <repository-name>
-   ```
-
-2. **Install dependencies:**
+1. **Install dependencies:**
 
    ```bash
    npm install
@@ -41,11 +35,6 @@ To build the project for production:
 npm run build
 ```
 
-The build artifacts will be stored in the `dist` directory. You can serve the production build locally using:
-
-```bash
-npm run serve
-```
 
 ### Dark and Light Modes
 
@@ -55,4 +44,4 @@ This project includes support for both dark and light modes. The default mode is
 
 - `npm run dev` — Start the development server
 - `npm run build` — Build the project for production
-- `npm run serve` — Serve the production build locally
+
