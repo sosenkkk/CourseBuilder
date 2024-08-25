@@ -234,6 +234,7 @@ export function StoreList({ title, items, id, buttonConfig }) {
                         draggableId={item.id}
                         index={index}
                         key={item.id}
+                        
                       >
                         {(provided) => (
                           <div
