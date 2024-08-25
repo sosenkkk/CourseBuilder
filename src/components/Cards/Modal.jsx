@@ -144,7 +144,7 @@ export default function ModalE({
               onPress={handleSubmit}
             >
               {isLink && !isEdit && "Add"}
-              {(isEdit || isCourseEdit || isLink) && "Save Changes"}
+              {(isEdit || isCourseEdit || (isLink && isEdit)) && "Save Changes"}
               {!isLink && !isEdit && isFile && "Upload"}
               {!isLink && !isEdit && !isFile && !isCourseEdit && "Create"}
             </Button>

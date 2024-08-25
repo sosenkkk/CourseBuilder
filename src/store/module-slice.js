@@ -89,7 +89,6 @@ const modulesSlice = createSlice({
         state.modules[moduleIndex].numberOfItems = updatedItems.length;
         saveData(state.modules);
 
-        console.log("Updated State:", state.modules);
       }
     },
     reorderModules: (state, action) => {
@@ -97,11 +96,9 @@ const modulesSlice = createSlice({
       saveData(action.payload);
     },
     addItemIndividual: (state, action) => {
-      console.log(action.payload);
       const item = action.payload;
       const module = state.modules.find((mod) => mod.id === "1");
       if (module) {
-        console.log(item);
         module.items.push(item);
         module.numberOfItems = module.items.length;
         saveData(state.modules);
@@ -117,7 +114,6 @@ const modulesSlice = createSlice({
       }
     },
     downloadSingleFile: (state, action) => {
-      console.log(action.payload);
       const idItem = action.payload.idItem;
       const moduleIndex = state.modules.findIndex(
         (module) => module.id === action.payload.idModule
