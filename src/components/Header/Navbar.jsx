@@ -127,7 +127,7 @@ export default function NavBar() {
   ];
 
   return (
-    <div className="flex w-100 bg-[#f9f9f9] sticky top-0 z-50 dark:bg-[#222222] items-center justify-between py-6 pb-12">
+    <div className="flex w-100 bg-[#f9f9f9] transition-all sticky top-0 z-50 dark:bg-[#222222] items-center justify-between py-6 pb-12">
       <div>
         <h2 className="text-lg font-bold ">Course builder</h2>
       </div>
